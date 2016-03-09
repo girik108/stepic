@@ -1,8 +1,10 @@
+from html import escape
+
 def hello(env , start_response):
     status = '200 OK'
-    data = "Hello\n"
-    headers = [
-		('Content-Type', 'text/plain'),
-		('Content-Length', str(len(data)))]
+    data = b"Hello\n"
+    headers = [('Content-Type', 'text/plain')]
     start_response(status, headers)
-    return [body]
+    resp = bytes(env['QUERY_STRING'], encoding = 'utf-8')
+    resp = [res + b'\n' for res in resp.split(b'&')]
+    return resp
