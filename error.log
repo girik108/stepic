@@ -1,0 +1,631 @@
+2016-03-09 11:26:25 [3399] [INFO] Starting gunicorn 19.0.0
+2016-03-09 11:26:25 [3399] [INFO] Listening at: http://127.0.0.1:8000 (3399)
+2016-03-09 11:26:25 [3399] [INFO] Using worker: sync
+2016-03-09 11:26:25 [3402] [INFO] Booting worker with pid: 3402
+2016-03-09 11:27:23 [3402] [INFO] Worker exiting (pid: 3402)
+2016-03-09 11:27:23 [3399] [INFO] Handling signal: int
+2016-03-09 11:27:23 [3399] [INFO] Shutting down: Master
+2016-03-09 11:27:48 [3451] [INFO] Starting gunicorn 19.0.0
+2016-03-09 11:27:48 [3451] [INFO] Listening at: http://127.0.0.1:8000 (3451)
+2016-03-09 11:27:48 [3451] [INFO] Using worker: sync
+2016-03-09 11:27:48 [3454] [INFO] Booting worker with pid: 3454
+2016-03-09 11:27:51 [3454] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: 'Hello\n' is not a byte.
+2016-03-09 11:27:52 [3454] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: 'Hello\n' is not a byte.
+2016-03-09 11:27:52 [3454] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: 'Hello\n' is not a byte.
+2016-03-09 11:27:54 [3454] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: 'Hello\n' is not a byte.
+2016-03-09 11:28:17 [3454] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: 'Hello\n' is not a byte.
+2016-03-09 11:28:36 [3454] [INFO] Worker exiting (pid: 3454)
+2016-03-09 11:28:36 [3451] [INFO] Handling signal: int
+2016-03-09 11:28:36 [3451] [INFO] Shutting down: Master
+2016-03-09 11:28:54 [3473] [INFO] Starting gunicorn 19.0.0
+2016-03-09 11:28:54 [3473] [INFO] Listening at: http://127.0.0.1:8000 (3473)
+2016-03-09 11:28:54 [3473] [INFO] Using worker: sync
+2016-03-09 11:28:54 [3476] [INFO] Booting worker with pid: 3476
+2016-03-09 11:29:09 [3476] [INFO] Worker exiting (pid: 3476)
+2016-03-09 11:29:09 [3473] [INFO] Handling signal: int
+2016-03-09 11:29:09 [3473] [INFO] Shutting down: Master
+2016-03-09 11:47:19 [3607] [INFO] Starting gunicorn 19.0.0
+2016-03-09 11:47:19 [3607] [INFO] Listening at: http://127.0.0.1:8000 (3607)
+2016-03-09 11:47:19 [3607] [INFO] Using worker: sync
+2016-03-09 11:47:19 [3610] [INFO] Booting worker with pid: 3610
+2016-03-09 11:47:22 [3610] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 134, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/box/web/hello.py", line 8, in hello
+    return [data, wsgi.version]
+NameError: name 'wsgi' is not defined
+2016-03-09 11:47:24 [3610] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 134, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/box/web/hello.py", line 8, in hello
+    return [data, wsgi.version]
+NameError: name 'wsgi' is not defined
+2016-03-09 11:47:25 [3610] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 134, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/box/web/hello.py", line 8, in hello
+    return [data, wsgi.version]
+NameError: name 'wsgi' is not defined
+2016-03-09 11:47:31 [3610] [INFO] Worker exiting (pid: 3610)
+2016-03-09 11:47:31 [3607] [INFO] Handling signal: int
+2016-03-09 11:47:31 [3607] [INFO] Shutting down: Master
+2016-03-09 12:13:47 [3696] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:13:47 [3696] [INFO] Listening at: http://127.0.0.1:8000 (3696)
+2016-03-09 12:13:47 [3696] [INFO] Using worker: sync
+2016-03-09 12:13:47 [3699] [INFO] Booting worker with pid: 3699
+2016-03-09 12:13:48 [3699] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: [''] is not a byte.
+2016-03-09 12:14:01 [3699] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: ['a=1', 'b=2'] is not a byte.
+2016-03-09 12:14:04 [3699] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: ['a=1', 'b=2'] is not a byte.
+2016-03-09 12:14:07 [3699] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: ['a=1', 'b=2'] is not a byte.
+2016-03-09 12:14:28 [3699] [INFO] Worker exiting (pid: 3699)
+2016-03-09 12:14:28 [3696] [INFO] Handling signal: int
+2016-03-09 12:14:28 [3696] [INFO] Shutting down: Master
+2016-03-09 12:16:01 [3724] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:16:01 [3724] [INFO] Listening at: http://127.0.0.1:8000 (3724)
+2016-03-09 12:16:01 [3724] [INFO] Using worker: sync
+2016-03-09 12:16:01 [3727] [INFO] Booting worker with pid: 3727
+2016-03-09 12:16:03 [3727] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 139, in handle_request
+    for item in respiter:
+TypeError: string argument without an encoding
+2016-03-09 12:16:05 [3727] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 139, in handle_request
+    for item in respiter:
+TypeError: string argument without an encoding
+2016-03-09 12:16:51 [3727] [INFO] Worker exiting (pid: 3727)
+2016-03-09 12:16:51 [3724] [INFO] Handling signal: int
+2016-03-09 12:16:51 [3724] [INFO] Shutting down: Master
+2016-03-09 12:21:12 [3759] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:21:12 [3759] [INFO] Listening at: http://127.0.0.1:8000 (3759)
+2016-03-09 12:21:12 [3759] [INFO] Using worker: sync
+2016-03-09 12:21:12 [3762] [INFO] Booting worker with pid: 3762
+2016-03-09 12:21:43 [3762] [INFO] Worker exiting (pid: 3762)
+2016-03-09 12:21:43 [3759] [INFO] Handling signal: int
+2016-03-09 12:21:43 [3759] [INFO] Shutting down: Master
+2016-03-09 12:25:38 [3780] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:25:38 [3780] [INFO] Listening at: http://127.0.0.1:8000 (3780)
+2016-03-09 12:25:38 [3780] [INFO] Using worker: sync
+2016-03-09 12:25:38 [3783] [INFO] Booting worker with pid: 3783
+2016-03-09 12:25:45 [3783] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 139, in handle_request
+    for item in respiter:
+  File "/home/box/web/hello.py", line 9, in <lambda>
+    func = lambda b: bytes(b + b'\n', encoding = 'utf-8')
+TypeError: Can't convert 'bytes' object to str implicitly
+2016-03-09 12:25:53 [3783] [INFO] Worker exiting (pid: 3783)
+2016-03-09 12:25:53 [3780] [INFO] Handling signal: int
+2016-03-09 12:25:53 [3780] [INFO] Shutting down: Master
+2016-03-09 12:26:56 [3802] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:26:56 [3802] [INFO] Listening at: http://127.0.0.1:8000 (3802)
+2016-03-09 12:26:56 [3802] [INFO] Using worker: sync
+2016-03-09 12:26:56 [3805] [INFO] Booting worker with pid: 3805
+2016-03-09 12:27:55 [3805] [INFO] Worker exiting (pid: 3805)
+2016-03-09 12:27:55 [3802] [INFO] Handling signal: int
+2016-03-09 12:27:55 [3802] [INFO] Shutting down: Master
+2016-03-09 12:28:06 [3810] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:28:06 [3810] [INFO] Listening at: http://127.0.0.1:8000 (3810)
+2016-03-09 12:28:06 [3810] [INFO] Using worker: sync
+2016-03-09 12:28:06 [3813] [INFO] Booting worker with pid: 3813
+2016-03-09 12:28:15 [3813] [INFO] Worker exiting (pid: 3813)
+2016-03-09 12:28:15 [3810] [INFO] Handling signal: int
+2016-03-09 12:28:15 [3810] [INFO] Shutting down: Master
+2016-03-09 12:28:54 [3829] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:28:54 [3829] [INFO] Listening at: http://127.0.0.1:8000 (3829)
+2016-03-09 12:28:54 [3829] [INFO] Using worker: sync
+2016-03-09 12:28:54 [3832] [INFO] Booting worker with pid: 3832
+2016-03-09 12:30:15 [3832] [INFO] Worker exiting (pid: 3832)
+2016-03-09 12:30:15 [3829] [INFO] Handling signal: int
+2016-03-09 12:30:15 [3829] [INFO] Shutting down: Master
+2016-03-09 12:31:33 [3849] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:31:33 [3849] [INFO] Listening at: http://127.0.0.1:8000 (3849)
+2016-03-09 12:31:33 [3849] [INFO] Using worker: sync
+2016-03-09 12:31:33 [3852] [INFO] Booting worker with pid: 3852
+2016-03-09 12:32:00 [3852] [INFO] Worker exiting (pid: 3852)
+2016-03-09 12:32:00 [3849] [INFO] Handling signal: int
+2016-03-09 12:32:00 [3849] [INFO] Shutting down: Master
+2016-03-09 12:32:45 [3867] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:32:45 [3867] [INFO] Listening at: http://127.0.0.1:8000 (3867)
+2016-03-09 12:32:45 [3867] [INFO] Using worker: sync
+2016-03-09 12:32:45 [3870] [INFO] Booting worker with pid: 3870
+2016-03-09 12:34:50 [3870] [INFO] Worker exiting (pid: 3870)
+2016-03-09 12:34:50 [3867] [INFO] Handling signal: int
+2016-03-09 12:34:50 [3867] [INFO] Shutting down: Master
+2016-03-09 12:36:06 [3892] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:36:06 [3892] [INFO] Listening at: http://127.0.0.1:8000 (3892)
+2016-03-09 12:36:06 [3892] [INFO] Using worker: sync
+2016-03-09 12:36:06 [3895] [INFO] Booting worker with pid: 3895
+2016-03-09 12:39:04 [3895] [INFO] Worker exiting (pid: 3895)
+2016-03-09 12:39:04 [3892] [INFO] Handling signal: int
+2016-03-09 12:39:04 [3892] [INFO] Shutting down: Master
+2016-03-09 12:40:54 [3927] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:40:54 [3927] [INFO] Listening at: http://127.0.0.1:8000 (3927)
+2016-03-09 12:40:54 [3927] [INFO] Using worker: sync
+2016-03-09 12:40:54 [3930] [INFO] Booting worker with pid: 3930
+2016-03-09 12:41:35 [3930] [INFO] Worker exiting (pid: 3930)
+2016-03-09 12:41:35 [3927] [INFO] Handling signal: int
+2016-03-09 12:41:35 [3927] [INFO] Shutting down: Master
+2016-03-09 12:44:27 [3949] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:44:27 [3949] [INFO] Listening at: http://127.0.0.1:8000 (3949)
+2016-03-09 12:44:27 [3949] [INFO] Using worker: sync
+2016-03-09 12:44:27 [3952] [INFO] Booting worker with pid: 3952
+2016-03-09 12:44:44 [3952] [INFO] Worker exiting (pid: 3952)
+2016-03-09 12:44:44 [3949] [INFO] Handling signal: int
+2016-03-09 12:44:45 [3949] [INFO] Shutting down: Master
+2016-03-09 12:45:46 [3981] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:45:46 [3981] [INFO] Listening at: http://127.0.0.1:8000 (3981)
+2016-03-09 12:45:46 [3981] [INFO] Using worker: sync
+2016-03-09 12:45:46 [3984] [INFO] Booting worker with pid: 3984
+2016-03-09 12:45:48 [3984] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 134, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/box/web/hello.py", line 10, in hello
+    resp = bytearray(env['QUERY_STRING'])
+TypeError: string argument without an encoding
+2016-03-09 12:45:49 [3984] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 134, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/box/web/hello.py", line 10, in hello
+    resp = bytearray(env['QUERY_STRING'])
+TypeError: string argument without an encoding
+2016-03-09 12:45:54 [3984] [INFO] Worker exiting (pid: 3984)
+2016-03-09 12:45:54 [3981] [INFO] Handling signal: int
+2016-03-09 12:45:54 [3981] [INFO] Shutting down: Master
+2016-03-09 12:46:51 [4005] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:46:51 [4005] [INFO] Listening at: http://127.0.0.1:8000 (4005)
+2016-03-09 12:46:51 [4005] [INFO] Using worker: sync
+2016-03-09 12:46:51 [4008] [INFO] Booting worker with pid: 4008
+2016-03-09 12:46:53 [4008] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: bytearray(b'a=1&a=2&b=3&d=6') is not a byte.
+2016-03-09 12:46:54 [4008] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: bytearray(b'a=1&a=2&b=3&d=6') is not a byte.
+2016-03-09 12:46:56 [4008] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: bytearray(b'a=1&a=2&b=3&d=6') is not a byte.
+2016-03-09 12:46:57 [4008] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: bytearray(b'a=1&a=2&b=3&d=6') is not a byte.
+2016-03-09 12:46:58 [4008] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 140, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 323, in write
+    assert isinstance(arg, binary_type), "%r is not a byte." % arg
+AssertionError: bytearray(b'a=1&a=2&b=3&d=6') is not a byte.
+2016-03-09 12:47:00 [4008] [INFO] Worker exiting (pid: 4008)
+2016-03-09 12:47:00 [4005] [INFO] Handling signal: int
+2016-03-09 12:47:00 [4005] [INFO] Shutting down: Master
+2016-03-09 12:47:39 [4029] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:47:39 [4029] [INFO] Listening at: http://127.0.0.1:8000 (4029)
+2016-03-09 12:47:39 [4029] [INFO] Using worker: sync
+2016-03-09 12:47:39 [4032] [INFO] Booting worker with pid: 4032
+2016-03-09 12:49:32 [4032] [INFO] Worker exiting (pid: 4032)
+2016-03-09 12:49:32 [4029] [INFO] Handling signal: int
+2016-03-09 12:49:32 [4029] [INFO] Shutting down: Master
+2016-03-09 12:50:04 [4052] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:50:04 [4052] [INFO] Listening at: http://127.0.0.1:8000 (4052)
+2016-03-09 12:50:04 [4052] [INFO] Using worker: sync
+2016-03-09 12:50:04 [4055] [INFO] Booting worker with pid: 4055
+2016-03-09 12:50:14 [4055] [INFO] Worker exiting (pid: 4055)
+2016-03-09 12:50:14 [4052] [INFO] Handling signal: int
+2016-03-09 12:50:14 [4052] [INFO] Shutting down: Master
+2016-03-09 12:53:39 [4084] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:53:39 [4084] [INFO] Listening at: http://127.0.0.1:8000 (4084)
+2016-03-09 12:53:39 [4084] [INFO] Using worker: sync
+2016-03-09 12:53:39 [4087] [INFO] Booting worker with pid: 4087
+2016-03-09 12:55:21 [4087] [INFO] Worker exiting (pid: 4087)
+2016-03-09 12:55:21 [4084] [INFO] Handling signal: int
+2016-03-09 12:55:21 [4084] [INFO] Shutting down: Master
+2016-03-09 12:56:28 [4108] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:56:28 [4108] [INFO] Listening at: http://127.0.0.1:8000 (4108)
+2016-03-09 12:56:28 [4108] [INFO] Using worker: sync
+2016-03-09 12:56:28 [4111] [INFO] Booting worker with pid: 4111
+2016-03-09 12:56:52 [4111] [INFO] Worker exiting (pid: 4111)
+2016-03-09 12:56:52 [4108] [INFO] Handling signal: int
+2016-03-09 12:56:52 [4108] [INFO] Shutting down: Master
+2016-03-09 12:57:14 [4127] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:57:14 [4127] [INFO] Listening at: http://127.0.0.1:8000 (4127)
+2016-03-09 12:57:14 [4127] [INFO] Using worker: sync
+2016-03-09 12:57:15 [4130] [INFO] Booting worker with pid: 4130
+2016-03-09 12:57:16 [4130] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 134, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/box/web/hello.py", line 10, in hello
+    resp = escape(bytes(env['QUERY_STRING'], encoding = 'utf-8'))
+  File "/usr/lib/python3.4/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+TypeError: expected bytes, bytearray or buffer compatible object
+2016-03-09 12:57:19 [4130] [INFO] Worker exiting (pid: 4130)
+2016-03-09 12:57:19 [4127] [INFO] Handling signal: int
+2016-03-09 12:57:19 [4127] [INFO] Shutting down: Master
+2016-03-09 12:59:38 [4161] [INFO] Starting gunicorn 19.0.0
+2016-03-09 12:59:38 [4161] [INFO] Listening at: http://127.0.0.1:8000 (4161)
+2016-03-09 12:59:38 [4161] [INFO] Using worker: sync
+2016-03-09 12:59:38 [4164] [INFO] Booting worker with pid: 4164
+2016-03-09 13:02:19 [4164] [INFO] Worker exiting (pid: 4164)
+2016-03-09 13:02:19 [4161] [INFO] Handling signal: int
+2016-03-09 13:02:19 [4161] [INFO] Shutting down: Master
+2016-03-09 13:02:21 [4171] [INFO] Starting gunicorn 19.0.0
+2016-03-09 13:02:21 [4171] [INFO] Listening at: http://127.0.0.1:8000 (4171)
+2016-03-09 13:02:21 [4171] [INFO] Using worker: sync
+2016-03-09 13:02:21 [4174] [INFO] Booting worker with pid: 4174
+2016-03-09 13:02:22 [4174] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 134, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/box/web/hello.py", line 10, in hello
+    resp = bytes(encode(env['QUERY_STRING'], quote = True), encoding = 'utf-8')
+NameError: name 'encode' is not defined
+2016-03-09 13:02:24 [4174] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 134, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/box/web/hello.py", line 10, in hello
+    resp = bytes(encode(env['QUERY_STRING'], quote = True), encoding = 'utf-8')
+NameError: name 'encode' is not defined
+2016-03-09 13:03:07 [4174] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 93, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 134, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/box/web/hello.py", line 10, in hello
+    resp = bytes(escape(env['QUERY_STRING'], quote = True), encoding = 'utf-8')
+NameError: name 'encode' is not defined
+2016-03-09 13:03:11 [4174] [INFO] Worker exiting (pid: 4174)
+2016-03-09 13:03:11 [4171] [INFO] Handling signal: int
+2016-03-09 13:03:11 [4171] [INFO] Shutting down: Master
+2016-03-09 13:03:12 [4183] [INFO] Starting gunicorn 19.0.0
+2016-03-09 13:03:12 [4183] [INFO] Listening at: http://127.0.0.1:8000 (4183)
+2016-03-09 13:03:12 [4183] [INFO] Using worker: sync
+2016-03-09 13:03:12 [4186] [INFO] Booting worker with pid: 4186
+2016-03-09 13:05:33 [4186] [INFO] Worker exiting (pid: 4186)
+2016-03-09 13:05:33 [4183] [INFO] Handling signal: int
+2016-03-09 13:05:33 [4183] [INFO] Shutting down: Master
+2016-03-09 13:06:36 [4204] [INFO] Starting gunicorn 19.0.0
+2016-03-09 13:06:36 [4204] [INFO] Listening at: http://127.0.0.1:8000 (4204)
+2016-03-09 13:06:36 [4204] [INFO] Using worker: sync
+2016-03-09 13:06:36 [4207] [INFO] Booting worker with pid: 4207
+2016-03-09 13:06:49 [4207] [INFO] Worker exiting (pid: 4207)
+2016-03-09 13:06:49 [4204] [INFO] Handling signal: int
+2016-03-09 13:06:49 [4204] [INFO] Shutting down: Master
+2016-03-09 13:08:07 [4226] [INFO] Starting gunicorn 19.0.0
+2016-03-09 13:08:07 [4226] [INFO] Listening at: http://127.0.0.1:8000 (4226)
+2016-03-09 13:08:07 [4226] [INFO] Using worker: sync
+2016-03-09 13:08:07 [4229] [INFO] Booting worker with pid: 4229
+2016-03-09 13:18:04 [4226] [INFO] Handling signal: int
+2016-03-09 13:18:04 [4229] [INFO] Worker exiting (pid: 4229)
+2016-03-09 13:18:04 [4226] [INFO] Shutting down: Master
+2016-03-09 13:18:41 [4308] [INFO] Starting gunicorn 19.0.0
+2016-03-09 13:18:41 [4308] [INFO] Listening at: http://127.0.0.1:8080 (4308)
+2016-03-09 13:18:41 [4308] [INFO] Using worker: sync
+2016-03-09 13:18:41 [4311] [INFO] Booting worker with pid: 4311
+2016-03-09 13:18:42 [4312] [INFO] Booting worker with pid: 4312
+2016-03-09 13:18:42 [4313] [INFO] Booting worker with pid: 4313
+2016-03-09 13:20:49 [4311] [INFO] Worker exiting (pid: 4311)
+2016-03-09 13:20:49 [4313] [INFO] Worker exiting (pid: 4313)
+2016-03-09 13:20:49 [4312] [INFO] Worker exiting (pid: 4312)
+2016-03-09 13:20:49 [4308] [INFO] Handling signal: int
+2016-03-09 13:20:49 [4308] [INFO] Shutting down: Master
+2016-03-09 13:20:50 [4332] [INFO] Starting gunicorn 19.0.0
+2016-03-09 13:20:50 [4332] [INFO] Listening at: http://127.0.0.1:8080 (4332)
+2016-03-09 13:20:50 [4332] [INFO] Using worker: sync
+2016-03-09 13:20:50 [4335] [INFO] Booting worker with pid: 4335
+2016-03-09 13:20:50 [4336] [INFO] Booting worker with pid: 4336
+2016-03-09 13:20:50 [4337] [INFO] Booting worker with pid: 4337
+2016-03-09 13:21:53 [4337] [INFO] Worker exiting (pid: 4337)
+2016-03-09 13:21:53 [4332] [INFO] Handling signal: int
+2016-03-09 13:21:53 [4336] [INFO] Worker exiting (pid: 4336)
+2016-03-09 13:21:53 [4335] [INFO] Worker exiting (pid: 4335)
+2016-03-09 13:21:53 [4332] [INFO] Shutting down: Master
+2016-03-09 13:22:10 [4343] [INFO] Starting gunicorn 19.0.0
+2016-03-09 13:22:10 [4343] [INFO] Listening at: http://127.0.0.1:8080 (4343)
+2016-03-09 13:22:10 [4343] [INFO] Using worker: sync
+2016-03-09 13:22:10 [4346] [INFO] Booting worker with pid: 4346
+2016-03-09 13:22:10 [4347] [INFO] Booting worker with pid: 4347
+2016-03-09 13:22:10 [4348] [INFO] Booting worker with pid: 4348
+2016-03-09 13:24:58 [4368] [INFO] Booting worker with pid: 4368
+2016-03-09 13:24:58 [4369] [INFO] Booting worker with pid: 4369
+2016-03-09 13:24:59 [4370] [INFO] Booting worker with pid: 4370
+2016-03-09 13:24:59 [4343] [INFO] Handling signal: hup
+2016-03-09 13:24:59 [4343] [INFO] Hang up: Master
+2016-03-09 13:24:59 [4368] [INFO] Worker exiting (pid: 4368)
+2016-03-09 13:24:59 [4371] [INFO] Booting worker with pid: 4371
+2016-03-09 13:24:59 [4372] [INFO] Booting worker with pid: 4372
+2016-03-09 13:24:59 [4369] [INFO] Worker exiting (pid: 4369)
+2016-03-09 13:24:59 [4370] [INFO] Worker exiting (pid: 4370)
+2016-03-09 13:24:59 [4373] [INFO] Booting worker with pid: 4373
+2016-03-09 14:08:16 [4688] [INFO] Starting gunicorn 19.0.0
+2016-03-09 14:08:16 [4688] [ERROR] Connection in use: ('127.0.0.1', 8080)
+2016-03-09 14:08:16 [4688] [ERROR] Retrying in 1 second.
+2016-03-09 14:08:17 [4688] [ERROR] Connection in use: ('127.0.0.1', 8080)
+2016-03-09 14:08:17 [4688] [ERROR] Retrying in 1 second.
+2016-03-09 14:08:18 [4688] [ERROR] Connection in use: ('127.0.0.1', 8080)
+2016-03-09 14:08:18 [4688] [ERROR] Retrying in 1 second.
+2016-03-09 14:08:19 [4688] [ERROR] Connection in use: ('127.0.0.1', 8080)
+2016-03-09 14:08:19 [4688] [ERROR] Retrying in 1 second.
+2016-03-09 14:08:20 [4688] [ERROR] Connection in use: ('127.0.0.1', 8080)
+2016-03-09 14:08:20 [4688] [ERROR] Retrying in 1 second.
+2016-03-09 14:08:21 [4688] [ERROR] Can't connect to ('127.0.0.1', 8080)
+2016-03-09 16:30:24 [4343] [INFO] Handling signal: hup
+2016-03-09 16:30:25 [4343] [INFO] Hang up: Master
+2016-03-09 16:30:24 [5165] [INFO] Booting worker with pid: 5165
+2016-03-09 16:30:24 [5166] [INFO] Booting worker with pid: 5166
+2016-03-09 16:30:24 [5164] [INFO] Booting worker with pid: 5164
+2016-03-09 16:30:28 [5190] [INFO] Booting worker with pid: 5190
+2016-03-09 16:30:28 [5164] [INFO] Worker exiting (pid: 5164)
+2016-03-09 16:30:28 [5165] [INFO] Worker exiting (pid: 5165)
+2016-03-09 16:30:28 [5166] [INFO] Worker exiting (pid: 5166)
+2016-03-09 16:30:28 [5191] [INFO] Booting worker with pid: 5191
+2016-03-09 16:30:28 [5192] [INFO] Booting worker with pid: 5192
+2016-03-09 16:30:28 [4343] [INFO] Handling signal: term
+2016-03-09 16:30:28 [5190] [INFO] Worker exiting (pid: 5190)
+2016-03-09 16:30:28 [5191] [INFO] Worker exiting (pid: 5191)
+2016-03-09 16:30:28 [5192] [INFO] Worker exiting (pid: 5192)
+2016-03-09 16:30:29 [4343] [INFO] Shutting down: Master
+2016-03-10 10:35:11 [3355] [INFO] Starting gunicorn 19.0.0
+2016-03-10 10:35:11 [3355] [INFO] Listening at: http://127.0.0.1:8000 (3355)
+2016-03-10 10:35:11 [3355] [INFO] Using worker: sync
+2016-03-10 10:35:11 [3358] [INFO] Booting worker with pid: 3358
+2016-03-10 10:35:11 [3358] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 502, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 365, in import_app
+    __import__(module)
+ImportError: No module named 'wsgi'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 502, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 365, in import_app
+    __import__(module)
+ImportError: No module named 'wsgi'
+2016-03-10 10:35:11 [3358] [INFO] Worker exiting (pid: 3358)
+2016-03-10 10:35:11 [3355] [INFO] Shutting down: Master
+2016-03-10 10:35:11 [3355] [INFO] Reason: Worker failed to boot.
+2016-03-10 10:35:45 [3365] [INFO] Starting gunicorn 19.0.0
+2016-03-10 10:35:45 [3365] [INFO] Listening at: http://127.0.0.1:8000 (3365)
+2016-03-10 10:35:45 [3365] [INFO] Using worker: sync
+2016-03-10 10:35:45 [3368] [INFO] Booting worker with pid: 3368
+2016-03-10 10:35:45 [3368] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 502, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 365, in import_app
+    __import__(module)
+ImportError: No module named 'wsgi'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 502, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 365, in import_app
+    __import__(module)
+ImportError: No module named 'wsgi'
+2016-03-10 10:35:45 [3368] [INFO] Worker exiting (pid: 3368)
+2016-03-10 10:35:45 [3365] [INFO] Shutting down: Master
+2016-03-10 10:35:45 [3365] [INFO] Reason: Worker failed to boot.
+2016-03-10 10:37:16 [3417] [INFO] Starting gunicorn 19.0.0
+2016-03-10 10:37:16 [3417] [INFO] Listening at: http://127.0.0.1:8000 (3417)
+2016-03-10 10:37:16 [3417] [INFO] Using worker: sync
+2016-03-10 10:37:16 [3420] [INFO] Booting worker with pid: 3420
+2016-03-10 10:37:16 [3420] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/conf/__init__.py", line 94, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2212, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2224, in _find_and_load_unlocked
+ImportError: No module named 'ask'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 502, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 365, in import_app
+    __import__(module)
+  File "/home/box/web/ask/ask/wsgi.py", line 14, in <module>
+    application = get_wsgi_application()
+  File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/usr/lib/python3/dist-packages/django/__init__.py", line 20, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/lib/python3/dist-packages/django/conf/__init__.py", line 46, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python3/dist-packages/django/conf/__init__.py", line 42, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/lib/python3/dist-packages/django/conf/__init__.py", line 98, in __init__
+    % (self.SETTINGS_MODULE, e)
+ImportError: Could not import settings 'ask.settings' (Is it on sys.path? Is there an import error in the settings file?): No module named 'ask'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/conf/__init__.py", line 94, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2212, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2224, in _find_and_load_unlocked
+ImportError: No module named 'ask'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 502, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 365, in import_app
+    __import__(module)
+  File "/home/box/web/ask/ask/wsgi.py", line 14, in <module>
+    application = get_wsgi_application()
+  File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/usr/lib/python3/dist-packages/django/__init__.py", line 20, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/lib/python3/dist-packages/django/conf/__init__.py", line 46, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python3/dist-packages/django/conf/__init__.py", line 42, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/lib/python3/dist-packages/django/conf/__init__.py", line 98, in __init__
+    % (self.SETTINGS_MODULE, e)
+ImportError: Could not import settings 'ask.settings' (Is it on sys.path? Is there an import error in the settings file?): No module named 'ask'
+2016-03-10 10:37:16 [3420] [INFO] Worker exiting (pid: 3420)
+2016-03-10 10:37:17 [3417] [INFO] Shutting down: Master
+2016-03-10 10:37:17 [3417] [INFO] Reason: Worker failed to boot.
