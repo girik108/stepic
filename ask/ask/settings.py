@@ -53,14 +53,13 @@ ROOT_URLCONF = 'ask.urls'
 
 WSGI_APPLICATION = 'ask.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'qa',
+        'NAME': 'qabase',
         'USER': 'django',
         'PASSWORD': '11111111',
         'HOST': '127.0.0.1',

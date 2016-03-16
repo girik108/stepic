@@ -1,0 +1,5 @@
+<h1>Имя - {{question.title}}</h1>
+<p>{{question.text}}</p>
+{% for ans in question.answer.all %}
+	<p>{{ans.text}}</p>
+{%endfor%}
