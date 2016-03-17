@@ -18,3 +18,5 @@ mysqladmin flush-privileges -uroot
 
 ask/manage.py makemigrations qa
 ask/manage.py migrate
+
+gunicorn3 -c etc/dj.py ask.wsgi:application --chdir /home/box/web/ask/
