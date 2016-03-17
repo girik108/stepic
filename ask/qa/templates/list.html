@@ -1,6 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QA</title>
+</head>
+<body>
 {% for question in questions %}
     {# Each "contact" is a Contact model object. #}
-    <a href="/question/{{question.id}}/">{{ question.title|upper }}-{{question.rating}}</a><br />
+	<h1>{{ question.title}}</h1>
+	<a href="/question/{{question.id}}/">{{ question.title}}</a><br />
 {% endfor %}
 
 <div class="pagination">
@@ -18,3 +25,5 @@
         {% endif %}
     </span>
 </div>
+</body>
+</html>
