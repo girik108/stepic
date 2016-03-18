@@ -1,9 +1,11 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render, get_object_or_404, render_to_response
-from django.http import HttpResponse, Http404
+from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.views.decorators.http import require_GET
 from django.core.paginator import Paginator,EmptyPage, PageNotAnInteger
 
 from qa.models import Question, Answer
+from qa.forms import AskForm, AnswerForm
 
 @require_GET
 def questions_new(request, *args, **kwargs):
@@ -37,17 +39,27 @@ def questions_pop(request, *args, **kwargs):
 
     return render_to_response('list.html', {"questions": questions})
 
+#Вопрос + поле для ответа
 @require_GET
 def question(request, slug):
     post = get_object_or_404(Question, pk = slug)
-
+    form = AnswerForm(initial={'question':slug})
+    #form = AnswerForm(slug)
     try:
         ans = Answer.objects.filter(question = slug)
     except:
         ans = None
     return render(request, 'question.html', {'question' : post,
-                                             'answers': ans})
-# Create your views here.
+                                             'answers': ans, 'form':form})
+#Флома для вопроса
+def ask(request, *args, **kwargs):
+    if request.method == "POST":
+        form = AskForm(request.POST)
+        if form.is_valid():
+            post = form.save()
+            url = post.get_url()
+            return HttpResponseRedirect(url)
+    else:
+        form = AskForm()
+        return render(request, 'ask_add.html', {'form': form })
 
-#def question_list(request, *args, **kwargs):
-#    pass

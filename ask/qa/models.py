@@ -14,6 +14,8 @@ class Question(models.Model):
     def __str__(self):
         return "Question {0} - {1}".format(self.id, self.title)
 
+    def get_url(self):
+        return '/question/{0}/'.format(self.id)
 
 class Answer(models.Model):
     text = models.TextField()

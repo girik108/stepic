@@ -6,7 +6,7 @@ urlpatterns = patterns('',
     url(r'^login/$','qa.views.test'),
     url(r'^signup/$','qa.views.test'),
     url(r'^question/(?P<slug>\d+)/$','qa.views.question'),
-    url(r'^ask/$','qa.views.test'),
+    url(r'^ask/$','qa.views.ask'),
     url(r'^(?P<pop>popular)/$','qa.views.questions_pop'),
     url(r'^new/$','qa.views.test'),
 )
