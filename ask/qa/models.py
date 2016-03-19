@@ -23,3 +23,5 @@ class Answer(models.Model):
     question = models.ForeignKey(Question)
     author = models.ForeignKey(User)
 
+    def redir_url(self):
+        return '/question/{0}/'.format(self.question.id)

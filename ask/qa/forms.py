@@ -28,3 +28,21 @@ class AnswerForm(forms.Form):
     text = forms.CharField(label='Текст ответа', max_length=100)
     question = forms.IntegerField(widget=forms.HiddenInput)
 
+    def __init__(self, *args, **kwargs):
+        self.__user = User.objects.get(pk = 1)
+        super(AnswerForm, self).__init__(*args, **kwargs)
+        
+    def clean(self):
+        self.cleaned_data = super(AnswerForm, self).clean()
+        text = self.cleaned_data.get('text')
+        question = self.cleaned_data.get('question')
+        self.cleaned_data['question'] = Question.objects.get(pk = int(question))
+        
+        self.cleaned_data['author'] = self.__user
+        if not text:
+            raise forms.ValidationError('Пустые поля',code='empty text')
+        
+    def save(self):
+        answer = Answer(**self.cleaned_data)
+        answer.save()
+        return answer

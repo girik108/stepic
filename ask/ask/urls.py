@@ -9,4 +9,5 @@ urlpatterns = patterns('',
     url(r'^ask/$','qa.views.ask'),
     url(r'^(?P<pop>popular)/$','qa.views.questions_pop'),
     url(r'^new/$','qa.views.test'),
+    url(r'^answer/$', 'qa.views.answer'),
 )
