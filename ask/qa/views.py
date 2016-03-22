@@ -82,7 +82,9 @@ def signup(request, *args, **kwargs):
         form = SignForm(request.POST)
         if form.is_valid():
             user = form.save()
-            login(request, user)
+            user_auth = authenticate(username = request.POST.get('username'),
+                                     password= request.POST.get('password'))
+            login(request, user_auth)
             return HttpResponseRedirect('/')
     else:
         form = SignForm()
