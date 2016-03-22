@@ -61,3 +61,5 @@ class SignForm(forms.Form):
     def save(self):
         user = User(**self.cleaned_data)
         user.save()
+        return user
+        

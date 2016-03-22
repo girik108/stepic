@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 from qa.models import Question, Answer
 from qa.forms import AskForm, AnswerForm, SignForm
+from django.contrib.auth import authenticate, login
 
 @require_GET
 def questions_new(request, *args, **kwargs):
@@ -80,7 +81,8 @@ def signup(request, *args, **kwargs):
     if request.method == "POST":
         form = SignForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save()
+            login(request, user)
             return HttpResponseRedirect('/')
     else:
         form = SignForm()
